@@ -1,0 +1,14 @@
+.discover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url("../assets/bachdround.jpg");
+  color: white;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 8%;
+  background-position: center;
+}
+.discover .content {
+}

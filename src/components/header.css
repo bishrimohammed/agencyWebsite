@@ -1,0 +1,80 @@
+.header {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../assets/pexels-pixabay-220201.jpg");
+  height: 93vh;
+  position: relative;
+  overflow: hidden;
+}
+.header .content {
+}
+.header .left {
+  flex-basis: 0.4;
+  width: 50%;
+}
+.header .left h1 {
+  font-size: 45px;
+  color: white !important;
+  font-weight: 700 !important;
+}
+.header .left h2 {
+  font-size: 22px;
+  color: #1457f5;
+}
+.header .left p {
+  color: white !important;
+
+  font-size: 16px;
+}
+.header .right {
+  flex-basis: 0.6;
+}
+.header .right img {
+  width: fit-content;
+}
+@media screen and (max-width: 599px) {
+  .header {
+    height: 100vh;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .header .left h1 {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .header .left h2 {
+    font-size: 18px;
+  }
+  .header .left {
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .header .left p {
+    font-size: 16px;
+    line-height: unset;
+  }
+}
+@media screen and (max-width: 990px) and (min-width: 600px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    height: 100vh;
+  }
+  .header .left h1 {
+    font-size: 25px;
+    line-height: 1.6;
+  }
+  .header .left {
+    width: 100%;
+  }
+  .header .left p {
+    font-size: 19px;
+    line-height: 1.3;
+  }
+}

@@ -1,0 +1,77 @@
+.feature {
+  background-color: #101923;
+  border-top: 5px solid gray;
+  z-index: 12;
+  position: relative;
+}
+.customer {
+  background-color: #1b293b;
+  margin-top: -150px;
+  z-index: 10000;
+  color: white;
+
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.icon-logo {
+}
+.icon-logo img {
+  width: 120px;
+}
+.section {
+  margin-top: 20px;
+}
+.feature .section > h2 {
+  color: #3bafca;
+  font-size: 25px;
+}
+.feature .list {
+  height: 450px;
+}
+.feature .card1 {
+  width: 100%;
+}
+.title {
+  color: #33a9ff;
+}
+.feature .list .coll h1 {
+  font-size: 25px;
+}
+.feature .list .coll {
+  background-color: #1b293b;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+.feature .list .img1 {
+  object-fit: contain;
+  position: relative;
+}
+@media screen and (max-width: 599px) {
+  .feature .list .coll {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .feature .list .coll p {
+    font-size: 20px;
+  }
+  .feature .list {
+    padding: 0;
+    height: auto;
+  }
+}
+@media screen and (max-width: 990px) and (min-width: 600px) {
+  .customer {
+    margin-top: -120px;
+  }
+  .feature .list {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 660px) {
+  .customer {
+    margin-top: -90px;
+  }
+}

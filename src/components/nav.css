@@ -1,0 +1,28 @@
+nav {
+  height: 80px;
+  background-color: #000000;
+}
+nav a img {
+  width: 200px;
+  height: auto;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #0494fc;
+}
+@media screen and (max-width: 990px) and (min-width: 600px) {
+  nav {
+    height: 60px;
+  }
+  .logo {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 599px) {
+  nav {
+    height: 50px;
+  }
+  .logo {
+    width: 150px;
+  }
+}
