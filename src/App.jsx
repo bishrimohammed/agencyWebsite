@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Nav from "./components/Nav";
+import NavbarTop from "./components/NavbarTop";
 import "./App.css";
 import Header from "./components/Header";
 import Feature from "./components/Feature";
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Nav />
+      <NavbarTop />
       <Header />
       <Feature />
       <Discover />

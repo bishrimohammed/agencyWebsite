@@ -1,6 +1,14 @@
-nav {
+.navbartop {
   height: 80px;
-  background-color: #000000;
+  background-color: #000000 !important;
+  z-index: 1000000;
+  position: fixed;
+  top: 0;
+}
+.navbar-collapse {
+  flex-basis: unset;
+  flex-basis: 0 !important;
+  align-items: center;
 }
 nav a img {
   width: 200px;

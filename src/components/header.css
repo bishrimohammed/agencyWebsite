@@ -6,6 +6,7 @@
     ),
     url("../assets/pexels-pixabay-220201.jpg");
   height: 93vh;
+  margin-top: 64px;
   position: relative;
   overflow: hidden;
 }
