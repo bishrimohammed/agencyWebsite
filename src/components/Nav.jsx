@@ -3,7 +3,7 @@ import logo from "../assets/logo-removebg-preview.png";
 import "./nav.css";
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark py-0 px-lg-5 px-md-3 px-sm-2 px-0">
+    <nav className="navbar position-fixed navbar-expand-sm navbar-dark bg-dark py-0 px-lg-5 px-md-3 px-sm-2 px-0">
       <div className="container-fluid px-lg-2 d-flex justify-content-between align-items-center">
         <button
           className="navbar-toggler d-lg-none d-block"

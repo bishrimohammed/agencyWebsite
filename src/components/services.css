@@ -1,0 +1,53 @@
+.service {
+  background-color: #101923;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.ourservice {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #3bafca;
+}
+.service .content {
+  color: white;
+}
+.service-left {
+  width: 50%;
+}
+.icon-content {
+  padding: 15px;
+  background-color: #33a9ff;
+  border-radius: 50%;
+  color: white;
+}
+.cretive-h h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.cretive-p,
+.service-p {
+  color: #a5bcd6;
+}
+.service-right img {
+  width: 100%;
+}
+.service-left2 .content {
+  background-color: #2b64f8;
+  border-radius: 15px;
+}
+.service-left2 .cretive-p {
+  color: #d8e3f0;
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 990px) {
+  .service-right {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
