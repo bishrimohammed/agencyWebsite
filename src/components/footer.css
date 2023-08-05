@@ -1,0 +1,16 @@
+.footer {
+  background-color: #101923;
+}
+.footer h1 {
+  font-weight: 600;
+  font-size: 50px;
+  color: white;
+}
+.footer .input {
+  border-radius: 0;
+  background-color: black;
+  border: none;
+}
+.footer .input::placeholder {
+  color: whitesmoke;
+}

@@ -30,7 +30,6 @@
   color: #a5bcd6;
 }
 .service-right img {
-  width: 100%;
 }
 .service-left2 .content {
   background-color: #2b64f8;
@@ -40,11 +39,29 @@
   color: #d8e3f0;
   font-size: 14px;
 }
-@media screen and (max-width: 600px) {
+.service-right2 .content {
+  background-color: #2e4155;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.service-right2 img {
+  height: 100%;
+  width: 300px;
+}
+@media screen and (min-width: 640px) and (max-width: 990px) {
+  .service-left2 {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .service-left2 {
+    padding-right: 0;
+  }
 }
 @media screen and (max-width: 990px) {
   .service-right {
     margin-top: 30px;
+
     width: 100%;
     display: flex;
     align-items: center;

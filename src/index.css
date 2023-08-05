@@ -9,7 +9,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+body {
+  background-color: #101923;
+}
 a {
   text-decoration: none;
 }

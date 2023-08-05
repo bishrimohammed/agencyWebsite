@@ -71,13 +71,13 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="service-right w-100 px-lg-5">
-            <img src={image} alt="" className="img-fluid " />
+          <div className="service-right w-100 mx-auto px-lg-5">
+            <img src={image} alt="" className="img-fluid w-lg-100" />
           </div>
         </div>
-        <div className="d-flex">
-          <div className="service-left2 ">
-            <div className="content px-4 pt-4">
+        <div className="d-flex flex-lg-row flex-column  w-100">
+          <div className="service-left2 pe-3 w-md-50">
+            <div className="content  px-4 pt-4 ">
               <div className="cretive-h">
                 <h4>Mobile App Developments</h4>
               </div>
@@ -92,7 +92,25 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="service-right2"></div>
+          <div className="service-right2 mt-lg-0 mt-4">
+            <div className="content ps-4">
+              <div className="d-flex justify-content-between ">
+                <div className="flex-grow-1 align-self-end pb-3">
+                  <div className="cretive-h">
+                    <h4>Website Development</h4>
+                  </div>
+                  <div className="cretive-p">
+                    <p className="">
+                      Creating stunning websites for online success.
+                    </p>
+                  </div>
+                </div>
+                <div className="h-100 ">
+                  <img src={image} className="img-fluid " alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

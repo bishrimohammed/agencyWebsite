@@ -5,10 +5,9 @@ import Header from "./components/Header";
 import Feature from "./components/Feature";
 import Discover from "./components/Discover";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <NavbarTop />
@@ -16,6 +15,7 @@ function App() {
       <Feature />
       <Discover />
       <Services />
+      <Footer />
     </>
   );
 }
