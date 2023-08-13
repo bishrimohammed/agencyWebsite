@@ -6,11 +6,12 @@
     ),
     url("../assets/pexels-pixabay-220201.jpg");
   height: 93vh;
-  margin-top: 64px;
+  margin-top: 80px;
   position: relative;
   overflow: hidden;
 }
 .header .content {
+  height: 100%;
 }
 .header .left {
   flex-basis: 0.4;
@@ -31,17 +32,20 @@
   font-size: 16px;
 }
 .header .right {
-  flex-basis: 0.6;
+  flex: 1;
 }
 .header .right img {
-  width: fit-content;
+  background-color: transparent;
 }
+
 @media screen and (max-width: 599px) {
   .header {
-    height: 100vh;
+    height: 80vh;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .header .right {
   }
   .header .left h1 {
     font-size: 22px;

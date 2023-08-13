@@ -48,6 +48,9 @@
   height: 100%;
   width: 300px;
 }
+.service2-left-img img {
+  width: 500px;
+}
 @media screen and (min-width: 640px) and (max-width: 990px) {
   .service-left2 {
     width: 60%;

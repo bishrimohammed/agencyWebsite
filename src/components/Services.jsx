@@ -2,8 +2,8 @@ import React from "react";
 import { PcDisplayHorizontal, VolumeUp } from "react-bootstrap-icons";
 import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 import "./services.css";
-import image from "../assets/1349.000-ETB (1).jpg";
-import image1 from "../assets/1349.000-ETB.png";
+import image from "../assets/Website.png";
+import image1 from "../assets/Appdata-cuate.png";
 const Services = () => {
   return (
     <div className="service ">
@@ -71,8 +71,8 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="service-right w-100 mx-auto px-lg-5">
-            <img src={image} alt="" className="img-fluid w-lg-100" />
+          <div className="service-right w-100 mx-auto ">
+            <img src={image} alt="" className="img-fluid w-100" />
           </div>
         </div>
         <div className="d-flex flex-lg-row flex-column  w-100">
@@ -87,7 +87,7 @@ const Services = () => {
                   Experiences.
                 </p>
               </div>
-              <div className="service2-left-img px-4 pt-5">
+              <div className="service2-left-img mt-5 bg-white px-4 pt-5">
                 <img src={image1} alt="" className="img-fluid" />
               </div>
             </div>
@@ -100,7 +100,7 @@ const Services = () => {
                     <h4>Website Development</h4>
                   </div>
                   <div className="cretive-p">
-                    <p className="">
+                    <p className="mb-0">
                       Creating stunning websites for online success.
                     </p>
                   </div>

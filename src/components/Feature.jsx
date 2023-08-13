@@ -1,7 +1,7 @@
 import React from "react";
 import "./feature.css";
-import image11 from "../assets/1349.000-ETB.png";
-import image22 from "../assets/1349.000-ETB (1).jpg";
+import image11 from "../assets/Appdata-cuate.png";
+import image22 from "../assets/Website setup-cuate (2).png";
 import image1 from "../assets/1.png";
 import image2 from "../assets/2.png";
 import image3 from "../assets/3.png";
@@ -12,6 +12,18 @@ import image7 from "../assets/7.png";
 import image8 from "../assets/8.png";
 import image9 from "../assets/9.png";
 import image10 from "../assets/10.png";
+import { Stack, ListItem, ListItemAvatar } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material";
+const theme = createTheme({
+  components: {
+    MuiStack: {
+      defaultProps: {
+        useFlexGap: true,
+      },
+    },
+  },
+});
+
 const Feature = () => {
   return (
     <div className="feature position-relative   py-5">
@@ -22,36 +34,34 @@ const Feature = () => {
               <h1>join our 100+ happy cumstomers</h1>
             </div>
             <div className="icon-list py-4 px-3 d-flex flex-wrap align-item-center">
-              <div className="icon-logo pe-3 pb-5">
-                <img src={image1} alt="" />
-              </div>
-              <div className="icon-logo px-3">
-                <img src={image2} alt="" />
-              </div>
-              <div className="icon-logo px-4">
-                <img src={image3} alt="" />
-              </div>
-              <div className="icon-logo px-4">
-                <img src={image4} alt="" />
-              </div>
-              <div className="icon-logo px-4">
-                <img src={image5} alt="" />
-              </div>
-              <div className="icon-logo px-4">
-                <img src={image6} alt="" />
-              </div>
-              <div className="icon-logo px-4">
-                <img src={image7} alt="" />
-              </div>
-              <div className="icon-logo px-4">
-                <img src={image8} alt="" />
-              </div>
-              <div className="icon-logo px-2">
-                <img src={image9} alt="" />
-              </div>
-              <div className="icon-logo px-2">
-                <img src={image10} alt="" />
-              </div>
+              <ThemeProvider theme={theme}>
+                <Stack
+                  spacing={{ xs: 2, sm: 2 }}
+                  direction="row"
+                  useFlexGap
+                  flexWrap="wrap"
+                >
+                  <img src={image1} alt="" className="icon-logo" />
+
+                  <img src={image2} alt="" className="icon-logo" />
+
+                  <img src={image3} alt="" className="icon-logo" />
+
+                  <img src={image4} alt="" className="icon-logo" />
+
+                  <img src={image5} alt="" className="icon-logo" />
+
+                  <img src={image6} alt="" className="icon-logo" />
+
+                  <img src={image7} alt="" className="icon-logo" />
+
+                  <img src={image8} alt="" className="icon-logo" />
+
+                  <img src={image9} alt="" className="icon-logo" />
+
+                  <img src={image10} alt="" className="icon-logo" />
+                </Stack>
+              </ThemeProvider>
             </div>
           </div>
         </div>
@@ -69,8 +79,9 @@ const Feature = () => {
                     Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
                   </p>
                 </div>
-
-                <img className="img  " src={image11} alt="Title" />
+                <div className="bg-white flex-grow-1">
+                  <img className="img-fluid " src={image11} alt="Title" />
+                </div>
               </div>
             </div>
 
@@ -84,18 +95,19 @@ const Feature = () => {
                     Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
                   </p>
                 </div>
-
-                <img className="img mt-lg-auto " src={image22} alt="Title" />
+                <div className="bg-white mt-lg-5 mt-md-3">
+                  <img className="img-fluid  " src={image22} alt="Title" />
+                </div>
               </div>
             </div>
-            <div className="coll px-0 mb-4 text-white text-center">
-              <div className="card1 d-flex flex-column ">
-                <div className="card-body px-2 py-1">
-                  <h4 className="card-title">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </h4>
-                  <p className="card-text">
-                    Lorem ipsum dolor sit amet consectetur
+            <div className="coll collLast px-0 mb-4 text-white text-center">
+              <div className="card1 h-100 d-flex flex-column ">
+                <div className="  py-lg-2 py-md-3 py-4 px-md-3 px-2">
+                  <h1 className="title mb-sm-1 mb-2">
+                    Lorem ipsum dolor sit amet
+                  </h1>
+                  <p className="">
+                    Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
                   </p>
                 </div>
               </div>
