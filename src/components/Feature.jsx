@@ -14,6 +14,7 @@ import image9 from "../assets/9.png";
 import image10 from "../assets/10.png";
 import { Stack, ListItem, ListItemAvatar } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material";
+import { Animation } from "react-animate-style";
 const theme = createTheme({
   components: {
     MuiStack: {
@@ -71,47 +72,69 @@ const Feature = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing.
           </h3>
           <div className="list d-flex flex-sm-row flex-column ">
-            <div className="coll h-100 me-lg-4 me-md-2 px-0 text-white ">
-              <div className="card1 h-100 d-flex flex-column ">
-                <div className="  py-lg-2 py-md-3 py-4 px-md-3 px-2">
-                  <h1 className="">Lorem ipsum dolor sit amet</h1>
-                  <p className="">
-                    Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
-                  </p>
-                </div>
-                <div className="bg-white flex-grow-1">
-                  <img className="img-fluid " src={image11} alt="Title" />
+            <Animation
+              animationIn="bounceInLeft"
+              animationInDelay={100}
+              className="coll h-100 me-lg-4 me-md-2 px-0 text-white h-100"
+              isVisible={true}
+            >
+              <div className=" h-100">
+                <div className="card1 h-100 d-flex flex-column ">
+                  <div className="  py-lg-2 py-md-3 py-4 px-md-3 px-2">
+                    <h1 className="">Lorem ipsum dolor sit amet</h1>
+                    <p className="">
+                      Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
+                    </p>
+                  </div>
+                  <div className="bg-white flex-grow-1">
+                    <img className="img-fluid " src={image11} alt="Title" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </Animation>
 
-            <div className="coll me-lg-4 me-md-2 me-2 px-0 text-white ">
-              <div className="card1 h-100 d-flex flex-column ">
-                <div className=" py-lg-2 py-md-3 py-4 px-md-4 px-4">
-                  <h1 className="title mb-sm-1 mb-2">
-                    Lorem ipsum dolor sit amet
-                  </h1>
-                  <p className="mb-0">
-                    Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
-                  </p>
-                </div>
-                <div className="bg-white mt-lg-5 mt-md-3">
-                  <img className="img-fluid  " src={image22} alt="Title" />
-                </div>
-              </div>
-            </div>
-            <div className="coll collLast px-0 mb-4 text-white text-center">
-              <div className="card1 h-100 d-flex flex-column ">
-                <div className="  py-lg-2 py-md-3 py-4 px-md-3 px-2">
-                  <h1 className="title mb-sm-1 mb-2">
-                    Lorem ipsum dolor sit amet
-                  </h1>
-                  <p className="">
-                    Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
-                  </p>
+            <Animation
+              animationIn="bounceInLeft"
+              animationInDelay={500}
+              className="coll me-lg-4 me-md-2 me-2 px-0 text-white"
+              isVisible={true}
+            >
+              <div className="">
+                <div className="card1 h-100 d-flex flex-column ">
+                  <div className=" py-lg-2 py-md-3 py-4 px-md-4 px-4">
+                    <h1 className="title mb-sm-1 mb-2">
+                      Lorem ipsum dolor sit amet
+                    </h1>
+                    <p className="mb-0">
+                      Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
+                    </p>
+                  </div>
+                  <div className="bg-white mt-lg-5 mt-md-3">
+                    <img className="img-fluid  " src={image22} alt="Title" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </Animation>
+
+            <Animation
+              animationIn="bounceInLeft"
+              animationInDelay={400}
+              className="coll collLast px-0 mb-4 text-white text-center"
+              isVisible={true}
+            >
+              <div className="">
+                <div className="card1 h-100 d-flex flex-column ">
+                  <div className="  py-lg-2 py-md-3 py-4 px-md-3 px-2">
+                    <h1 className="title mb-sm-1 mb-2">
+                      Lorem ipsum dolor sit amet
+                    </h1>
+                    <p className="">
+                      Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Animation>
           </div>
         </div>
       </div>
